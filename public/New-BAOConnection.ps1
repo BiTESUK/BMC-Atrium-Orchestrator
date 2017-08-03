@@ -15,7 +15,7 @@ Function New-BAOConnection{
     .PARAMETER Fqdn
     [string]    -    The Fully Qualified Domain Name.
     
-        Default Setting - lsdie3l5e.sdi.corp.bankofamerica.com
+        Default Setting - my.test.server.com
     
     .PARAMETER Port
     [int]       -   The port number for the grid
@@ -31,12 +31,12 @@ Function New-BAOConnection{
     .EXAMPLE
     New-BAOConnection
 
-    Connects to the default FEDDEV Uri
+    Connects to the default Uri
 
     .EXAMPLE
     New-BAOConnection -Credential (Get-Credential)
 
-    Connects to the default FEDDEV Uri with the credential object passed.
+    Connects to the default Uri with the credential object passed.
 
     .EXAMPLE
     New-BAOConnection -Fqdn 'some.server.on.domain'
@@ -55,7 +55,8 @@ Function New-BAOConnection{
         [Parameter(ValueFromPipeline =$true,
             ValueFromPipelineByPropertyName = $True)]
         [Alias("h")]
-        [String]$Host = "lsdie3l5e.sdi.corp.bankofamerica.com",
+        #[ValidateNotNullOrEmpty()]
+        [String]$Host ='my.test.host.net',
 
         [Parameter(ValueFromPipelineByPropertyName = $true)]
         [Alias("p")]
