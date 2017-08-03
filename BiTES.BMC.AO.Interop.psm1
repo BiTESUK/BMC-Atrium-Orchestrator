@@ -52,7 +52,7 @@
     password for the account nbkajsa - this is clearly bad!
 #>
 $GLOBAL:SECURE_HASH = "01000000d08c9ddf0115d1118c7a00c04fc297eb010000004bb55b1cdfabaf4797f8062f08de58290000000002000000000003660000c00000001000000045a25e33e9aabca8b8a10c0a71ac1d630000000004800000a0000000100000007ffb85a18f271a9b1dc7cad39e0c81a818000000a4722e639045117c7362364888b30ba137779d7814cff25214000000d32eba58134ef5d2deebf7d1c3974a815f54ab6c";
-$GLOBAL:CALLER = "nbkajsa";
+$GLOBAL:CALLER = "**********";
 
 <# Create a PSScriptRoot for Testing live would run from 
     the module, so would populate correctly #>
